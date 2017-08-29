@@ -1,16 +1,9 @@
 ######################################
-# INSTALL OPENCV ON UBUNTU OR DEBIAN #
+# INSTALL OPENCV ON UBUNTU #
 ######################################
 
-# |         THIS SCRIPT IS TESTED CORRECTLY ON         |
-# |----------------------------------------------------|
-# | OS             | OpenCV       | Test | Last test   |
-# |----------------|--------------|------|-------------|
-# | Ubuntu 16.04.2 | OpenCV 3.2.0 | OK   | 20 May 2017 |
-# | Debian 8.8     | OpenCV 3.2.0 | OK   | 20 May 2017 |
-# | Debian 9.0     | OpenCV 3.2.0 | OK   | 25 Jun 2017 |
 
-# 1. KEEP UBUNTU OR DEBIAN UP TO DATE
+# 1. KEEP UBUNTU UP TO DATE
 
 sudo apt-get -y update
 sudo apt-get -y upgrade
@@ -23,7 +16,7 @@ sudo apt-get -y autoremove
 # Build tools:
 sudo apt-get install -y build-essential cmake
 
-# GUI (if you want to use GTK instead of Qt, replace 'qt5-default' with 'libgtkglext1-dev' and remove '-DWITH_QT=ON' option in CMake):
+# GUI 
 sudo apt-get install -y qt5-default libvtk6-dev
 
 # Media I/O:
